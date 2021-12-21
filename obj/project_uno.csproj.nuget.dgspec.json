@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/zy_wsl2_ubuntu/csharp/project_uno/project_uno.csproj": {}
+  },
+  "projects": {
+    "/home/zy_wsl2_ubuntu/csharp/project_uno/project_uno.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/zy_wsl2_ubuntu/csharp/project_uno/project_uno.csproj",
+        "projectName": "project_uno",
+        "projectPath": "/home/zy_wsl2_ubuntu/csharp/project_uno/project_uno.csproj",
+        "packagesPath": "/home/zy_wsl2_ubuntu/.nuget/packages/",
+        "outputPath": "/home/zy_wsl2_ubuntu/csharp/project_uno/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/zy_wsl2_ubuntu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.7.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
