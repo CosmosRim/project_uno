@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //using Humanizer;
+using System.Diagnostics;
 
 
 Console.WriteLine("Hola, WSL2😆");
@@ -41,8 +42,8 @@ static int fibonacci(int n) {
 }
 
 Console.WriteLine("This message is readable by the end user.");
-System.Diagnostics.Trace.WriteLine("This is a trace message when tracing the app.");
-System.Diagnostics.Debug.WriteLine("This is a debug message just for developers.");
+Trace.WriteLine("This is a trace message when tracing the app.");
+Debug.WriteLine("This is a debug message just for developers.");
 
 Debug.Write("Debug - ");
 Debug.WriteLine("This is a full line.");
