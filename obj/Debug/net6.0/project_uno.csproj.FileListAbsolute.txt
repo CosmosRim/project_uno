@@ -57,3 +57,9 @@
 /home/zy_wsl2_ubuntu/csharp/project_uno/bin/Debug/net6.0/zh-Hans/Humanizer.resources.dll
 /home/zy_wsl2_ubuntu/csharp/project_uno/bin/Debug/net6.0/zh-Hant/Humanizer.resources.dll
 /home/zy_wsl2_ubuntu/csharp/project_uno/obj/Debug/net6.0/project_uno.csproj.CopyComplete
+/home/zy_wsl2_ubuntu/csharp/project_uno/bin/Debug/net6.0/az/Humanizer.resources.dll
+/home/zy_wsl2_ubuntu/csharp/project_uno/bin/Debug/net6.0/hy/Humanizer.resources.dll
+/home/zy_wsl2_ubuntu/csharp/project_uno/bin/Debug/net6.0/is/Humanizer.resources.dll
+/home/zy_wsl2_ubuntu/csharp/project_uno/bin/Debug/net6.0/ko-KR/Humanizer.resources.dll
+/home/zy_wsl2_ubuntu/csharp/project_uno/bin/Debug/net6.0/ku/Humanizer.resources.dll
+/home/zy_wsl2_ubuntu/csharp/project_uno/bin/Debug/net6.0/th-TH/Humanizer.resources.dll
