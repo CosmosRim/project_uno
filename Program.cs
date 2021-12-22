@@ -25,7 +25,7 @@ Console.WriteLine("Hola, WSL2😆");
 
 int result = fibonacci(5);
 Console.WriteLine(result);
-Console.ReadKey(true);
+// Console.ReadKey(true);
 
 static int fibonacci(int n) {
     int n1 = 0;
@@ -39,3 +39,11 @@ static int fibonacci(int n) {
     }
     return n == 0 ? n1 : n2;
 }
+
+Console.WriteLine("This message is readable by the end user.");
+System.Diagnostics.Trace.WriteLine("This is a trace message when tracing the app.");
+System.Diagnostics.Debug.WriteLine("This is a debug message just for developers.");
+
+Debug.Write("Debug - ");
+Debug.WriteLine("This is a full line.");
+Debug.WriteLine("This is another full line.");
