@@ -85,6 +85,7 @@ foreach (var file in all_files_in_all_folders) {
 //Console.WriteLine(Path.Combine("stores","201","2011"));
 //Console.WriteLine(Path.GetExtension("stores.json"));
 
+/*
 string file_name = $"../stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json";
 FileInfo info = new FileInfo(file_name);
 Console.WriteLine($"name: {info.Name}");
@@ -103,3 +104,21 @@ Console.WriteLine($"is exist: {info.Exists}");
 Console.WriteLine($"is read only: {info.IsReadOnly}");
 Console.WriteLine($"length: {info.Length}");
 Console.WriteLine($"link target: {info.LinkTarget}");
+*/
+
+var current_directory = Directory.GetCurrentDirectory();
+var stores_directory = Path.Combine(current_directory, "../stores");
+var salesFiles = find_files(stores_directory);
+
+foreach (var file in salesFiles){
+    Console.WriteLine(file);
+}
+
+IEnumerable<string> find_files(string folderName) {
+    List<string> salesFiles = new List<string>();
+    var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
+    foreach (var file in foundFiles){
+        salesFiles.Add(file);
+    }
+    return salesFiles;
+}
