@@ -107,11 +107,19 @@ Console.WriteLine($"link target: {info.LinkTarget}");
 */
 
 var current_directory = Directory.GetCurrentDirectory();
-var stores_directory = Path.Combine(current_directory, "../stores");
+var stores_directory = Path.Combine(current_directory, "stores", "201", "newDir");
+bool does_dirctory_exist = Directory.Exists(stores_directory);
+if (!does_dirctory_exist) {
+    Directory.CreateDirectory(stores_directory);
+}
+// File.WriteAllText(Path.Combine(stores_directory, "test.txt"), "hola amigos");
+File.AppendAllText(Path.Combine(stores_directory, "test.txt"), $"hola amigos{Environment.NewLine}");
+
 var salesFiles = find_files(stores_directory);
 
 foreach (var file in salesFiles){
-    Console.WriteLine(file);
+    Console.WriteLine($"{file}:");
+    Console.WriteLine(File.ReadAllText(file));
 }
 
 IEnumerable<string> find_files(string folderName) {
