@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 
 
-Console.WriteLine("Hola, WSL2😆");
+Console.WriteLine("Hola, WSL2 and amigos😆");
 
 /*
 Console.WriteLine("Quantities:");
